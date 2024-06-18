@@ -11,7 +11,6 @@ my_chat_id = 5166911677
 
 @bot.message_handler(commands=['start', 'привет'])
 def start_message(message):
-    # bot.send_message(message.chat.id, str(message.chat.id))
     keyboard = types.ReplyKeyboardMarkup(row_width=1, resize_keyboard=True)
     button_1 = types.KeyboardButton(text='записаться на занятие')
     button_2 = types.KeyboardButton(text='обо мне')
